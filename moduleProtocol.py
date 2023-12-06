@@ -87,8 +87,8 @@ def start_protocol_temp(db_file):
         trashName = rawTrash[0:2]
         trashType = rawTrash[3:]
 
-        tiprack = containers.load(trashType, tipName, 'tiprack')
-        trash = containers.load(tipType, trashName, 'trash')
+        tiprack = containers.load(tipType, tipName, 'tiprack')
+        trash = containers.load(trashType, trashName, 'trash')
 
         axis_s = row[1]
 
@@ -142,6 +142,8 @@ def start_protocol_temp(db_file):
             trash_container=trash
             )
             print ("Loaded A Axis Pipette")
+            # Calibrate Tip Track and Bin
+            #Load Calibration Data
             calibarate_data = find_data("custom_workspace", trashName)
             robot.move_head(x=calibarate_data[4],y=calibarate_data[5],z=60, strategy='arc')
             robot.move_head(z=calibarate_data[6], strategy='direct')

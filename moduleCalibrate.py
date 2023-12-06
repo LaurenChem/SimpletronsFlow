@@ -139,8 +139,8 @@ def moveDefaultLocation_C(pipette, container, container_type):
         trashName = rawTrash[0:2]
         trashType = rawTrash[3:]
 
-        tiprack = containers.load(trashType, tipName)
-        trash =containers.load(tipType, trashName)
+        tiprack = containers.load(tipType, tipName)
+        trash =containers.load(trashType, trashName)
 
         axis_s = row[1]
 

@@ -288,9 +288,9 @@ def load_pre_pip(): #For Testing
 
     if count_preload_p == 0:
         #loadpipette ('a', 1000, 100, 800, 1200, 'B1', 'A2')
-        #insert = ('a', '1000', '100', '1', 600, 800, 'A3_tiprack-1000ul', 'B2_point')
-        #save_data("custom_pipette", insert) 
-        #update_pipette('pipette_a', 1)
+        insert = ('a', '1000', '100', '1', 600, 800, 'A3_tiprack-1000ul', 'B2_point')
+        save_data("custom_pipette", insert) 
+        update_pipette('pipette_a', 1)
         #loadpipette ('b', 1000, 100, 800, 1200, 'B2', 'A2')
         insert = ('b', '1000', '100', '1', 600, 800, 'A2_tiprack-1000ul', 'B2_trash-box')
         save_data("custom_pipette", insert) 
