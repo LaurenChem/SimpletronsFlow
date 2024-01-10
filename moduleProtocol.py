@@ -28,13 +28,15 @@ from tkinter import ttk
  Please edit below test_save_data if you play around wish to use
  code to write your protocol. Please refer to documentation for more info 
 """
-    
+
+"""    
 pipette_a = instruments.Pipette(
     axis='b',
     max_volume=200)
 pipette_b = instruments.Pipette(
     axis='a',
     max_volume=200)
+"""
 
 def start_protocol():
     try:
